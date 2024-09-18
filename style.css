@@ -1,114 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Nunito Sans", sans-serif;
-
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .nav-bar {
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-bar a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    text-decoration: none;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar a:hover {
+  color: rgb(230, 188, 82);
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
-    height: 700px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 700px;
 }
 
 .hero-section {
-    display: flex;
-    /* justify-content: space-around; */
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    margin-top: 230px;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  margin-top: 220px;
 }
 
 .hero-section h4 {
-    font-size: 60px;
-    font-weight: 200;
+  font-size: 60px;
+  font-weight: 200;
 }
 
 .hero-section h3 {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 .hero-section p {
-    font-size: 20px;
-    color: gray;
+  font-size: 20px;
+  color: gray;
 }
 
 .feature {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  height: 1200px;
 }
 
 .feature-head {
-    text-align: center;
+  text-align: center;
 }
 
 .feature-head h4 {
-    font-size: 25px;
-    font-weight: 100;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 .feature-head span {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(156, 118, 22);
 }
 
 .feature-link {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
 
 .feature-link a {
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .feature-link a:hover {
-    color: rgb(156, 118, 22);
+  color: rgb(156, 118, 22);
 }
 
 .content-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .content-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .img {
-    width: 90%;
+  width: 90%;
+}
+
+.content-1 h5 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.content-1 p {
+  font-size: 10px;
+}
+
+.content-2 h5 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.content-2 p {
+  font-size: 10px;
+}
+
+.resume {
+  background-color: black;
+  color: white;
+}
+
+.resume-title h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.resume-title span {
+  color: rgb(156, 118, 22);
+  font-weight: bold;
+}
+
+.resume-title {
+  text-align: center;
+}
+
+.subtext {
+  text-align: center;
+  color: rgb(156, 118, 22);
+  font-size: 30px;
+  margin-top: 30px;
+}
+.about-us {
+  background-color: black;
+  color: white;
+}
+
+.about {
+  text-align: center;
+  padding: 230px;
+}
+
+.about h4 {
+  font-weight: 200;
+  font-size: 50px;
+}
+
+.about span {
+  color: rgb(156, 118, 22);
+  font-weight: bold;
+}
+
+.about-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-text span {
+  color: rgb(156, 118, 22);
+}
+
+.about-img {
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-box button {
+    width: 30%;
+    height: 50px;
+    border-color: rgb(156, 118, 22);
+    background-color: transparent;
+}
+
+.btn-box button a {
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+.btn-box button:hover {
+  color: black;
+  background-color: rgb(156, 118, 22);
 }
