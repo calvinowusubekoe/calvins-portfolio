@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+  /* background-color: black; */
 }
 
 .nav-bar {
@@ -61,7 +62,7 @@
 .feature {
   background-color: black;
   color: white;
-  height: 1200px;
+  height: 900px;
 }
 
 .feature-head {
@@ -70,7 +71,7 @@
 
 .feature-head h4 {
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .feature-head span {
@@ -136,24 +137,6 @@
   font-size: 10px;
 }
 
-.resume {
-  background-color: black;
-  color: white;
-}
-
-.resume-title h3 {
-  font-size: 25px;
-  font-weight: 200;
-}
-
-.resume-title span {
-  color: rgb(156, 118, 22);
-  font-weight: bold;
-}
-
-.resume-title {
-  text-align: center;
-}
 
 .subtext {
   text-align: center;
@@ -192,7 +175,9 @@
 
 .about-img {
     border-radius: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+    width: 300px;
+    height: 289px;
 }
 
 .btn-box {
@@ -204,19 +189,203 @@
 }
 
 .btn-box button {
-    width: 30%;
+    width: 20%;
     height: 50px;
     border-color: rgb(156, 118, 22);
     background-color: transparent;
+    font-weight: 200;
+    border-radius: 10px;
 }
 
 .btn-box button a {
     text-decoration: none;
     font-size: 25px;
+    color: white;
     
 }
 
 .btn-box button:hover {
-  color: black;
   background-color: rgb(156, 118, 22);
+}
+
+.btn-box button a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.about-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-icons a {
+  color: white;
+  margin: 20px;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.about-icons a:hover {
+  color: rgb(156, 118, 22);
+}
+
+
+.skills {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 500px;
+}
+
+.skill-head {
+  text-align: center;
+  font-size: 30px;
+}
+
+.skill-head h3 {
+  font-weight: 200;
+}
+
+.skill-head span {
+  color: rgb(156, 118, 22);
+  font-weight: bold;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.skill-text1 span {
+  color: rgb(156, 118, 22);
+}
+
+.skill-text2 span {
+  color: rgb(156, 118, 22);
+}
+
+.per-skill {
+  background-color: black;
+  color: white;
+}
+
+.per-skill-head {
+  text-align: center;
+  font-size: 32px;
+}
+
+.per-skill-head h3 {
+  font-weight: 200;
+  font-size: 37px;
+}
+
+.per-skill-head span {
+  color: rgb(156, 118, 22);
+  font-weight: bolder;
+}
+
+.per-content {
+  padding: 20px;
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.per-content span {
+  color: rgb(156, 118, 22);
+}
+
+.per-content span:hover {
+  color: white;
+}
+
+hr {
+  color: darkgrey;
+  width: 80%;
+  
+}
+
+.my-services {
+background-color: black;
+color: white;
+}
+
+.service-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.service-header h3 {
+  font-weight: 200;
+}
+
+.service-header span {
+  color: rgb(156, 118, 22);
+  font-weight: bold;
+}
+
+.service-content {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 30px;
+}
+
+.service-content1 {
+  text-align: center;
+  background-color: rgb(36, 35, 35);
+  margin: 20px;
+  padding: 40px;
+}
+
+.service-content2 {
+  text-align: center;
+  background-color: rgb(36, 35, 35);
+  margin: 20px;
+  padding: 40px;
+}
+
+.service-content3 {
+  text-align: center;
+  background-color: rgb(36, 35, 35);
+  margin: 20px;
+  padding: 40px;
+}
+
+.service-content1 h4 {
+  margin: 20px;
+}
+
+.service-content2 h4 {
+  margin: 20px;
+}
+
+.service-content3 h4 {
+  margin: 20px;
+}
+
+.service-content1 p {
+  padding: 20px;
+}
+
+.service-content2 p {
+  padding: 20px;
+}
+
+.service-content3 p {
+  padding: 20px;
+}
+
+.service-content a {
+  text-decoration: none;
+  color: rgb(156, 118, 22);
+}
+
+.service-content img {
+  width: 20%;
 }
