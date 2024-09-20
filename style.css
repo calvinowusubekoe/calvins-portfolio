@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
-  /* background-color: black; */
+
 }
 
 .nav-bar {
@@ -481,4 +481,9 @@ footer {
   background-color: black;
   color: rgb(156, 118, 22);
   text-align: center;
+}
+
+.nav-pop {
+  background-color: rgb(156, 118, 22);
+  color: white;
 }
