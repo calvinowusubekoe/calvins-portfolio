@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
