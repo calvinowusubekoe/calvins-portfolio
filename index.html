@@ -6,157 +6,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calvin's Portfoilio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
     <nav class="nav-bar">
-        <a href="#">HOME</a>
-        <a href="#">PORTFOLIO</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SKILLS</a>
-        <a href="#">CONTACT</a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-menu">
+            <a href="#home">HOME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
     </nav>
     <div class="info">
         <h4>calvinbekoe7@gmail.com <span>||</span> </h4>
         <h4> +233 26 798 9160</h4>
     </div>
-    <section class="hero">
-        <div class="hero-section">
-            <h4>Hello, I'm</h4>
-            <h3>Calvin Owusu Bekoe</h3>
-            <p>AND THIS IS MY PORTFOLIO</p>
+    <section class="hero" id="home">
+        <canvas id="cursorWeb"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Calvin Bekoe</span></h1>
+                <h2>Backend Developer</h2>
+                <p>I build exceptional digital experiences with a focus on backend development.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="feature">
+    <section class="feature" id="portfolio">
         <div class="feature-head">
-            <h4>Featured <span>Portfolio</h4>
+            <h4>My Recent <span>Work</span></h4>
         </div>
-        <div class="feature-link">
-            <a href="#">All</a>
-            <a href="#">Packaging</a>
-            <a href="#">Mockup</a>
-            <a href="#">Typography</a>
-            <a href="#">Photography</a>
-        </div>
-        <div feature-content>
-            <div class="content-1">
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837219/p1_hybrxc.png" alt="img">
-                    <h5>Square Box Mockup</h5>
-                    <p>MOCKUP</p>
+        
+        <div class="feature-content">
+            <!-- Project 1 -->
+            <div class="feature-box">
+                <div class="img-wrapper">
+                    <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837219/me007_kvlsnc.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837220/p2_cgq1qh.png" alt="img">
-                    <h5>Product Box Package Mockup</h5>
-                    <p>MOCKUP</p>
-                </div>
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837221/p3_jifxmf.png" alt="img">
-                    <h5>Creative Package Design</h5>
-                    <p>PACKAGING</p>
+                <div class="feature-text">
+                    <h4>Portfolio Website</h4>
+                    <p>A modern, responsive portfolio showcasing my work and skills.</p>
+                    <div class="feature-link">
+                        <a href="https://calvinowusubekoe.github.io/calvins-portfolio/" class="btn-project">View Project</a>
+                        <a href="#" class="btn-code">Source Code</a>
+                    </div>
                 </div>
             </div>
-            <div class="content-2">
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837221/p4_ljhtxh.png" alt="img">
-                    <h5>Packaging Brand</h5>
-                    <p>PACKAGING</p>
+
+            <!-- Project 2 -->
+            <div class="feature-box">
+                <div class="img-wrapper">
+                    <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837216/front-end_x7up1p.png" alt="Project 2">
+                    <div class="overlay">
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>Cloud</span>
+                            <span>DevOps</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837221/p5_svv6eh.png" alt="img">
-                    <h5>Isometric 3D Extrusion</h5>
-                    <p>TYPOGRAPHY</p>
+                <div class="feature-text">
+                    <h4>Cloud Infrastructure</h4>
+                    <p>AWS cloud infrastructure deployment and management.</p>
+                    <div class="feature-link">
+                        <a href="https://medium.com/@calvinbekoe7/hosting-a-static-website-on-amazon-s3-57ea5a669d82" class="btn-project">View Project</a>
+                        <a href="#" class="btn-code">Source Code</a>
+                    </div>
                 </div>
-                <div class="feature-img">
-                    <img class="img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837221/p6_evbswn.png" alt="img">
-                    <h5>White Space Photography</h5>
-                    <p>PHOTOGRAPHY</p>
+            </div>
+
+            <!-- New Project 3 (RESTful API) -->
+            <div class="feature-box">
+                <div class="img-wrapper">
+                    <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1732738814/What-is-an-API_yyvr3h.png" alt="RESTful API">
+                    <div class="overlay">
+                        <div class="tech-stack">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>REST</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h4>RESTful API Service</h4>
+                    <p>A robust RESTful API built with Node.js and Express, featuring authentication, data validation, and comprehensive documentation.</p>
+                    <div class="feature-link">
+                        <a href="#" class="btn-project">API Docs</a>
+                        <a href="#" class="btn-code">Source Code</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="about">
             <h4>About <span>Me</span></h4>
             <div about-text>
                 <p>
-                    I am result oriented and efficient at multitasking. I am keen to learn and apply my knowledge and
-                    skills to challenging environments with the objective of achieving organizational goals as well as
-                    the ability to stay calm in high stress situations and getting the job done
+                    I am a result-oriented professional with a proven ability to multitask efficiently. I am keen to learn and apply my knowledge and skills in challenging environments, with the objective of achieving organizational goals. I possess a calm demeanor, enabling me to stay composed in high-stress situations while ensuring that tasks are completed successfully.
                 </p><br><br>
                 <p>
-                    <span>Calvin Owusu Bekoe</span> is a seasoned AWS Cloud Engineer, a Web Devloper he's driven to
-                    empower
-                    Africans with the expertise to design, build, and secure scalable cloud solutions as a Cloud
-                    Engineer.
-                    He's mission is to help businesses across the continent achieve their strategic goals, drive
-                    innovation,
-                    and unlock economic growth through cloud-enabled transformation.
+                    <span>Calvin Owusu Bekoe</span> is a seasoned AWS Cloud Engineer and Web Developer driven by a mission to empower Africans with the expertise to design, build, and secure scalable cloud solutions. His goal is to help businesses across the continent achieve their strategic objectives, drive innovation, and unlock economic growth through cloud-enabled transformation.
 
                 </p><br><br>
                 <p>
-                    He is passionate about delivering seamless and efficient cloud-based systems, dedicated to providing
-                    top-notch solutions that meet clients' unique cloud computing needs. With my expertise as a Cloud
-                    Engineer, I continuously strive to improve and innovate, ensuring the highest level of security,
-                    reliability, and performance in every cloud environment.
+                    He is passionate about delivering seamless and efficient cloud-based systems, dedicated to providing top-notch solutions tailored to clients' unique cloud computing needs. With his expertise as a Cloud Engineer and Backend Developer, he continuously strives to innovate and improve, ensuring the highest levels of security, reliability, and performance in every cloud environment.
 
                 </p><br><br>
-                <p> With a diploma in Graphic and Web Design from IPMC and a certificate in Cyber Attack Countermeasures
-                    from New York University, I bring a unique blend of creative and technical skills to the table. As a
-                    Cloud Engineer, I leverage this expertise to develop innovative, cloud-based solutions that drive
-                    business success and meet objectives effectively.
+                <p> Calvin holds a diploma in Graphic and Web Design from IPMC, a certificate in Cyber Attack Countermeasures from New York University, and a certificate in Web Development from MEST Africa. He brings a unique blend of creative and technical skills to the table. He leverages this expertise to develop innovative, cloud-based solutions that drive business success and effectively meet objectives.
                 </p>
-                <img class="about-img" src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837219/me007_kvlsnc.jpg" alt="img">
-                <div class="btn-box">
-                    <button>
-                        <a href="#">Hire Me!</a>
-                    </button>
-                    <button>
-                        <a href="#">Let's Talk</a>
-                    </button>
+                <div class="about-img-container">
+                    <div class="about-img-wrapper">
+                        <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837219/me007_kvlsnc.jpg" alt="About Me" class="about-img">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                    <div class="about-img-border"></div>
                 </div>
-                <div class="about-icons">
-                    <a href="https://www.linkedin.com/in/calvin-bekoe-b60b85224/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.twitter.com/KwekuOwusu18"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/kweku__owusu?igsh=MTV4bDhuZDVtMjZlaw%3D%3D&utm_source=qr"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/calvinowusubekoe"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://medium.com/@calvinbekoe7"><i class="fa-brands fa-medium"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <div class="btn-group">
+                    <button class="fancy-btn">Download CV</button>
+                    <button class="fancy-btn filled">Contact Me</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skill-head">
             <h3>Professional <span>Skills</span></h3>
         </div>
+        
         <div class="skill-content">
-            <div class="skill-text1">
-                <p><span>&#10004;</span> Photoshop</p>
-                <p><span>&#10004;</span> Illustrator</p>
-                <p><span>&#10004;</span> HTML</p>
-                <p><span>&#10004;</span> Animation</p>
-                <p><span>&#10004;</span> Microsoft Office Suite</p>
-                <p><span>&#10004;</span> Social Media Management</p>
-                <p><span>&#10004;</span> Problem-solving</p>
-                <p><span>&#10004;</span> User Interface (UI) Design</p>
-                <p><span>&#10004;</span> Cloud Computing</p>
-                <p><span>&#10004;</span> CSS</p>
+            <!-- Development Skills -->
+            <div class="skill-category">
+                <h4>Development</h4>
+                <div class="skill-group">
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>HTML/CSS</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>JavaScript</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-text2">
-                <p><span>&#10004;</span> Indesign</p>
-                <p><span>&#10004;</span>Customer Service</p>
-                <p><span>&#10004;</span> Lightroom</p>
-                <p><span>&#10004;</span> Web Design</p>
-                <p><span>&#10004;</span> WordPress</p>
-                <p><span>&#10004;</span> User Experience (UX) Design</p>
-                <p><span>&#10004;</span> Figma</p>
-                <p><span>&#10004;</span> JavaScript</p>
-                <p><span>&#10004;</span> Adobe XD</p>
-                <p><span>&#10004;</span> Cloud Engineer</p>
+
+            <!-- Backend Skills -->
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-group">
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Node.js</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Express.js</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>MongoDB</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="skill-category">
+                <h4>UI/UX & Design</h4>
+                <div class="skill-group">
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Google UX/UI</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Figma</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Adobe XD</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Photoshop</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Illustrator</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Others -->
+            <div class="skill-category">
+                <h4>Tools & Others</h4>
+                <div class="skill-group">
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>Git</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h5>AWS</h5>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -165,88 +328,191 @@
             <h3>Personal <span>Skills</span></h3>
         </div>
         <div class="per-content">
-            <p><span>&#10004;</span> A capable team player who is able to liase with people at all level</p>
-            <p><span>&#10004;</span> Easy going and approachable</p>
-            <p><span>&#10004;</span> Flexible, adapatable and open to change</p>
-            <p><span>&#10004;</span> Can work on own initiative</p>
-            <p><span>&#10004;</span> Ability to multitask and prioritize key task</p>
-            <p><span>&#10004;</span> Time Management</p>
-            <p><span>&#10004;</span> Empathy</p>
-            <p><span>&#10004;</span> Communication</p>
+            <p><span>✓</span> Problem Solving</p>
+            <p><span>✓</span> Communication</p>
+            <p><span>✓</span> Team Work</p>
+            <p><span>✓</span> Leadership</p>
+            <p><span>✓</span> Time Management</p>
+            <p><span>✓</span> Adaptability</p>
+            <p><span>✓</span> Creativity</p>
+            <p><span>✓</span> Critical Thinking</p>
         </div>
     </section>
-    <section class="my-services">
+    <section class="my-services" id="services">
         <div class="service-header">
             <h3>My <span>Services</span></h3>
         </div>
+
         <div class="service-content">
-            <div class="service-content1">
-                <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837216/front-end_x7up1p.png" alt="img">
-                <h4>Web Design</h4>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.</p>
-                <a href="#">Learn More</a>
+            <!-- Web Development -->
+            <div class="service-box" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="service-info">
+                    <h4>Web Development</h4>
+                    <p>Building responsive and dynamic websites using modern technologies and best practices.</p>
+                    <ul class="service-list">
+                        <li>Custom Website Development</li>
+                        <li>Responsive Design</li>
+                        <li>Frontend Development</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-content2">
-                <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837217/edit-tools_phbcry.png" alt="img">
-                <h4>Figma</h4>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-                    large
-                    language ocean.</p>
-                <a href="#">Learn More</a>
+
+            <!-- API Development -->
+            <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="service-info">
+                    <h4>API Development</h4>
+                    <p>Creating robust and scalable RESTful APIs for seamless integration.</p>
+                    <ul class="service-list">
+                        <li>RESTful API Design</li>
+                        <li>API Integration</li>
+                        <li>Authentication & Security</li>
+                        <li>API Documentation</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-content3">
-                <img src="https://res.cloudinary.com/dswfnaydo/image/upload/v1726837216/cloud-computing_1_rkd4vj.png" alt="img">
-                <h4>Host a static Website</h4>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                    there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-                    a large
-                    language ocean.</p>
-                <a href="#">Learn More</a>
+
+            <!-- Cloud Services -->
+            <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="service-info">
+                    <h4>Cloud Services</h4>
+                    <p>Implementing and managing cloud infrastructure for optimal performance.</p>
+                    <ul class="service-list">
+                        <li>AWS Cloud Solutions</li>
+                        <li>Cloud Infrastructure</li>
+                        <li>DevOps Implementation</li>
+                        <li>Server Management</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-head">
             <h3>Get in <span>Touch</span></h3>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
         </div>
-        <div class="mother">
-            <div class="forms">
+        
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <p>calvinbekoe7@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h4>Phone</h4>
+                        <p>+233 26 798 9160</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="info-content">
+                        <h4>Location</h4>
+                        <p>Accra, Ghana</p>
+                    </div>
+                </div>
+                  <!-- Social Media Links integrated into Contact Info -->
+        <div class="social-media">
+            <h4>Connect with me:</h4>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/calvin-bekoe-b60b85224/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/KwekuOwusu18" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://medium.com/@calvinbekoe7" target="_blank" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="https://github.com/calvinowusubekoe" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
                 <form>
-                    <h3>Contact Me</h3>
                     <div class="form-group">
-                        <label for="first-name">Your Name:</label>
-                        <input type="text" id="first-name" name="first-name"><br><br>
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="focus-border"></span>
                     </div>
+
                     <div class="form-group">
-                        <label for="your-email">Your Email:</label>
-                        <input type="text" id="last-name" name="Last-name"><br><br>
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="focus-border"></span>
                     </div>
+
                     <div class="form-group">
-                        <label for="your-phone">Your Phone:</label>
-                        <input type="text" id="last-name" name="Last-name"><br><br>
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <span class="focus-border"></span>
                     </div>
+
                     <div class="form-group">
-                        <label for="Message">Write a Message</label>
-                        <textarea rows="10" cols="30"></textarea>
-                        <br><br>
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="focus-border"></span>
                     </div>
-                    <!-- Submit Button -->
-                    <div class="form-group">
-                        <input type="submit" value="Send Message">
-                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Calvin <span>Bekoe</span></h3>
+                <p>Web Developer specializing in backend development and creative solutions.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
             <p>Copyright &copy; 2024 Calvin Owusu Bekoe. Powered by PlexioFusion</p>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <button class="scroll-to-top">
+        <a href="https://mail.google.com/"></a>
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html>
