@@ -2883,3 +2883,11 @@ h1, h2, h3, h4, h5, h6 {
 .social-icons a:hover {
     color: #1163ce; /* Gold color on hover */
 }
+
+.btn-group a {
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-group a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
