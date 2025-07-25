@@ -77,6 +77,9 @@
   justify-content: center;
 }
 
+.info a {
+  color: var(--highlight-color);
+}
 .info h4 {
   font-weight: 200;
 }
